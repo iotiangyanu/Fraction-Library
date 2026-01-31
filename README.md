@@ -34,3 +34,48 @@ Clone the repository and install the library in editable mode:
 git clone https://github.com/USERNAME/fraction-library.git
 cd fraction-library
 pip install -e .
+
+
+## 🚀 Usage Examples
+
+### Creating Fractions
+```python
+from fraction import Fraction
+
+f1 = Fraction(1, 2)
+f2 = Fraction(3, 4)
+
+print(f1)   # 1/2
+print(f2)   # 3/4
+
+print(f1 + f2)   # 5/4
+print(f1 - f2)   # -1/4
+print(f1 * f2)   # 3/8
+print(f1 / f2)   # 2/3
+
+
+result = (Fraction(1, 2) + Fraction(2, 3)) * Fraction(3, 4) - 1
+print(result)    # -1/8
+
+f = Fraction(1, 2)
+
+print(f + 1)     # 3/2
+print(2 - f)     # 3/2
+print(f * 3)     # 3/2
+print(1 / f)     # 2/1
+
+Fraction(1, 2) == Fraction(2, 4)   # True
+Fraction(1, 3) < Fraction(1, 2)    # True
+Fraction(3, 2) > 1                 # True
+
+
+f = Fraction(2, 3)
+print(f.to_decimal())              # 0.66667
+print(f.to_decimal(precision=3))   # 0.667
+
+f = Fraction.from_float(0.75)
+print(f)                            # 3/4
+
+
+Fraction(1, 0)     # Raises ValueError
+Fraction(1, 2) / 0 # Raises ZeroDivisionError
