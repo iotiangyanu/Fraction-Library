@@ -34,7 +34,7 @@ Clone the repository and install the library in editable mode:
 git clone https://github.com/USERNAME/fraction-library.git
 cd fraction-library
 pip install -e .
-
+---
 
 ## 🚀 Usage Examples
 
@@ -79,3 +79,5 @@ print(f)                            # 3/4
 
 Fraction(1, 0)     # Raises ValueError
 Fraction(1, 2) / 0 # Raises ZeroDivisionError
+
+---
