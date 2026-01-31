@@ -1,1 +1,65 @@
+Creating Fractions
 
+>>> from fraction import Fraction
+>>> f1 = Fraction(1, 2)
+>>> f2 = Fraction(3, 4)
+>>> str(f1)
+'1/2'
+>>> str(f2)
+'3/4'
+
+Basic Arithmetic Operations
+
+>>> f1 + f2
+Fraction(5, 4)
+>>> f1 - f2
+Fraction(-1, 4)
+>>> f1 * f2
+Fraction(3, 8)
+>>> f1 / f2
+Fraction(2, 3
+
+Method Chaining
+
+>>> (Fraction(1, 2) + Fraction(2, 3)) * Fraction(3, 4) - 1
+Fraction(-1, 8)
+Operations with Integers
+python
+Copy code
+>>> f = Fraction(1, 2)
+>>> f + 1
+Fraction(3, 2)
+>>> 2 - f
+Fraction(3, 2)
+>>> f * 3
+Fraction(3, 2)
+>>> 1 / f
+Fraction(2, 1)
+
+Fraction Comparison
+
+>>> Fraction(1, 2) == Fraction(2, 4)
+True
+>>> Fraction(1, 3) < Fraction(1, 2)
+True
+>>> Fraction(3, 2) > 1
+True
+Decimal and Float Conversion
+python
+Copy code
+>>> Fraction(2, 3).to_decimal()
+0.66667
+>>> Fraction.from_float(0.75)
+Fraction(3, 4)
+
+Error Handling
+
+>>> Fraction(1, 0)
+Traceback (most recent call last):
+...
+ValueError: Denominator cannot be zero
+
+>>> Fraction(1, 2) / 0
+Traceback (most recent call last):
+...
+ZeroDivisionError: Cannot divide by zero fraction
