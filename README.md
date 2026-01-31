@@ -3,8 +3,7 @@
 A simple and lightweight Python library that provides a `Fraction` class to perform
 arithmetic operations on fractions using **operator overloading**.
 
-This library is designed for learning purposes and demonstrates clean class design,
-magic methods, and fraction simplification.
+This library is designed for learning purposes and demonstrates clean class design, magic methods, and fraction simplification.
 
 ---
 
@@ -23,6 +22,6 @@ magic methods, and fraction simplification.
 Clone the repository and install it locally:
 
 ```bash
-git clone https://github.com/iotiangyanu/fraction-library.git
+git clone https://github.com/iotiangyanu/Fraction-library.git
 cd fraction-library
-pip install -e .
+pip install -e 
